@@ -21,7 +21,6 @@ function App() {
     <Router basename={process.env.PUBLIC_URL}>
       <StoreContextProvider>
         <div className={css.container}>
-          <Header />
           <main className={css.content}>
             <Switch>
               <Route path="/explore">

@@ -1,6 +1,8 @@
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
 import { StoreContext } from "context/StoreContext.js";
 import { Link } from "react-router-dom";
+
+import Header from "./Header";
 
 import css from './FriendsList.module.css';
 
@@ -15,22 +17,24 @@ function FriendsList() {
         return (
             <ul>
                 {users.filter(user => user.id != currentUserId).map(
-                    user => 
-                    <li>
-                        <Link to={"/chat/" + user.id}>
-                            {user.name}
-                        </Link>
-                    </li>
+                    user =>
+                        <li>
+                            <Link to={"/chat/" + user.id}>
+                                {user.name}
+                            </Link>
+                        </li>
                 )}
             </ul>
         )
     }
 
     return (
-      <div className={css.container}>
-          {getList()}
-      </div>
+        <div>
+            <div className={css.container}>
+                {getList()}
+            </div>
+        </div>
     );
-  }
-  
-  export default FriendsList;
+}
+
+export default FriendsList;
