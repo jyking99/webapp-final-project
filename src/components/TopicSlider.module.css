@@ -1,0 +1,20 @@
+.slider {
+    background-color: pink;
+    position: fixed;
+    height: 100%;
+    width: 60%;
+    right: 0;
+    margin-top: -0.5em;
+    padding: 1em;
+    z-index: 2;
+    overflow-y: scroll;
+}
+
+.slider ul {
+    padding-left: 1em;
+    margin-top: 0.5em;
+}
+
+.slider li {
+    list-style: none;
+}
