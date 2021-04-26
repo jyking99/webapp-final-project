@@ -1,0 +1,20 @@
+.msg {
+    margin-left: 0.5em;
+    display: flex;
+}
+
+.msg img {
+    max-width: 50px;
+}
+
+.msg div {
+    margin-left: 0.5em;
+}
+
+.tagArea input {
+    width: 50%;
+}
+
+.tagArea button {
+    margin-left: 0.5em;
+}
