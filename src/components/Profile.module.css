@@ -28,6 +28,14 @@ p {
     margin: 0;
 }
 
+.content {
+    margin-top: 1em;
+}
+
+.content ul {
+    margin: 0;
+}
+
 .attributes {
     border-top: 2px solid lightgray;
     display: flex;
@@ -51,8 +59,4 @@ p {
 /* this will change the cursor to indicate its clickability*/
 button{
   cursor:pointer;
-}
-
-.temp {
-    margin: 3em 3em 3em 3em;
 }

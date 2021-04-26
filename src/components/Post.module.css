@@ -1,0 +1,13 @@
+.whole {
+    padding: 0.5em;
+}
+
+.post {
+    display: flex;
+    /* border-bottom:  */
+}
+
+.post img {
+    max-width: 50px;
+}
+

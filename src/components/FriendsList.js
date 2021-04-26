@@ -11,8 +11,6 @@ function FriendsList() {
         currentUserId, users
     } = useContext(StoreContext);
 
-    console.log(users);
-
     function getList() {
         return (
             <ul>

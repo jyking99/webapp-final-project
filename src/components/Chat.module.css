@@ -1,3 +1,44 @@
 .text {
     
 }
+
+.inputArea {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.chatInput {
+    height: 4em;
+    width: 80%;
+}
+
+.send {
+    width: 14%;
+    padding: 1.5em 1.5em 1em 1em;
+    background-color: red;
+}
+
+.bubble {
+    list-style: none;
+    margin-bottom: 1em;
+}
+
+.bubble .outer {
+    display: flex;
+}
+
+.bubble img {
+    max-width: 50px;
+}
+
+.bubble div {
+    margin-left: 0.5em;
+}
+
+.history {
+    padding-left: 0;
+    overflow-y: scroll;
+    padding-bottom: 5em;
+}
