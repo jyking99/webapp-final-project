@@ -1,8 +1,6 @@
 .header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-
     box-sizing: border-box;
     position: fixed;
     top: 0;
@@ -24,3 +22,13 @@ button{
   button:focus{
     outline: none;
   }
+
+.headerItem{
+  padding-left: 110px;
+}
+
+.goBack{
+  padding: 0;
+  margin: 0;
+  float: left;
+}

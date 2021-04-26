@@ -23,8 +23,8 @@ function Explore() {
 
     function renderPosts() {
         return getPosts().map(post =>
-            <div>
-                <Post userId={post.userId} text={post.text} replies={post.replies} />
+            <div className={css.post}>
+                <Post userId={post.userId} text={post.text} replies={post.replies}/>
             </div>
         );
     }

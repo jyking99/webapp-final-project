@@ -19,7 +19,7 @@ function Profile() {
     function renderTags() {
         return (
             <ul>
-                {user.tags.map(tag => <li><Link to={"/explore/" + tag}>{tag}</Link></li>)}
+                {user.tags.map(tag => <li className={css.tags}><Link to={"/explore/" + tag}>{tag}</Link></li>)}
             </ul>
         );
     }
@@ -28,9 +28,10 @@ function Profile() {
         return (
             <ul>
                 {posts.filter(post => post.userId === user.id).map(post =>
-                    <li>
+                    <li className={css.questions}>
                         <Link>
-                            {post.text} {post.topic}
+                            {post.text}<br/>
+                            <div className={css.topic}>Topic: {post.topic}</div>
                         </Link>
                     </li>
                 )}
@@ -44,21 +45,22 @@ function Profile() {
             <div className={css.head}>
                 <img src={publicUrl(user.photo)} alt="bigFace" />
                 <div>
-                    <h2>{user.id}</h2>
+                    <b><p>{user.id}</p></b>
                     <p>{user.name}</p>
-                    <p>{user.bio}</p>
+                    <p className={css.bio}>{user.bio}</p>
                 </div>
             </div>
             <div className={css.content}>
                 <div className={css.topics}>
-                    <p>Tags</p>
+                    <b><p>Tags</p></b>
                     {renderTags()}
                 </div>
                 <div className={css.recent}>
-                    <p>Recent questions</p>
+                    <b><p>Recent questions</p></b>
                     {renderQuestions()}
                 </div>
             </div>
+            <br/><br/><br/>
         </div>
     )
 }

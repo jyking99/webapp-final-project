@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Header from "./Header";
 
 import css from './FriendsList.module.css';
+import publicUrl from "utils/publicUrl.js";
 
 function FriendsList() {
     let {
@@ -18,6 +19,7 @@ function FriendsList() {
                     user =>
                         <li>
                             <Link to={"/chat/" + user.id}>
+                                <img src={publicUrl(user.photo)}/>
                                 {user.name}
                             </Link>
                         </li>

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function ChatHeader(props) {
     return (
         <div className={css.header}>
-            <div className={css.headerItem}>
+            <div>
                 <Link to="/">
                     <p>＜</p>
                 </Link>
@@ -15,13 +15,7 @@ function ChatHeader(props) {
                     <h2>{(props.title == null) ? "Project name" : props.title}</h2>
                 </button>
             </div>
-            <div className={css.headerItem}>
-                <button onClick={props.changeSliderState}>
-                    三
-                </button>
-            </div>
         </div>
-
     );
 }
 

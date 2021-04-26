@@ -6,7 +6,7 @@ import Header from "./Header";
 function Home() {
   return (
     <div>
-      <Header title="StudyPal" />
+      <Header title="Chat" />
       <FriendsList />
     </div>
   );

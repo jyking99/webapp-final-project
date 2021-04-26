@@ -10,6 +10,8 @@
 .head img {
     max-width: 100px;
     border-radius: 100px;
+    padding-left: 5px;
+    padding-right: 4px;
 }
 
 .head h2 {
@@ -59,4 +61,31 @@ p {
 /* this will change the cursor to indicate its clickability*/
 button{
   cursor:pointer;
+}
+
+b{
+    font-size:x-large;
+}
+
+.container{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.bio{
+    color:rgb(100, 100, 100)
+}
+
+ul li{
+    list-style-type: none;    
+}
+
+.tags{
+    border: solid lightgray;
+    color: clue;
+}
+
+.topic{
+    border-bottom: 1px solid lightgrey;
+    color: rgb(29, 167, 253);
 }

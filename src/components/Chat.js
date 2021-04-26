@@ -6,6 +6,10 @@ import ChatHeader from "./ChatHeader";
 import TopicSlider from "./TopicSlider";
 
 import css from './Chat.module.css';
+import { CssBaseline } from '@material-ui/core';
+
+import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 
 function Chat() {
     const [message, setMessage] = useState('');
@@ -72,7 +76,7 @@ function Chat() {
 
     return (
         <div className={css.container}>
-            <ChatHeader title={"Chat with " + userId} changeSliderState={toggleSliderState} />
+            <ChatHeader title={"Chat with " + userId} changeSliderState={toggleSliderState} className={css.header}/>
             {
                 sliderState && <TopicSlider setTopic={setTopic} topics={getTopics()} changeSliderState={toggleSliderState} />
             }
@@ -81,8 +85,8 @@ function Chat() {
             </div>
             <div className={css.inputArea}>
                 <form className={css.addComment} onSubmit={handleSubmitComment}>
-                    <input className={css.chatInput} type="text" placeholder="Add a comment…" value={message} onChange={e => setMessage(e.target.value)} />
-                    <button className={css.send} type="submit">send</button>
+                    <input className={css.chatInput} type="text" placeholder="Type a respond..." value={message} onChange={e => setMessage(e.target.value)} />
+                    <button className={css.send} type="Send">send</button>
                 </form>
             </div>
         </div>

@@ -26,17 +26,17 @@ function NewPost(props) {
 
     return (
         <div>
-            <Header title="Post" />
+            <Header title="Post this paragraph" />
             <div className={css.msg}>
                 <img src={publicUrl(getUser(chat.from).photo)} alt='icon' />
                 <div>
                     <p><strong>{chat.from}</strong></p>
                     <p>{chat.text}</p>
                 </div>
-            </div>
+            </div><br/>
             <div className={css.tagArea}>
-                <p>{chat.topic}</p>
-                <form onSubmit={handleTagChange}>
+                <p>Current Topic: {chat.topic}</p>
+                <form onSubmit={handleTagChange} className={css.addComment}>
                     <input type="text" placeholder="Type here to change the tag"  onChange={e => setTag(e.target.value)}></input>
                     <button type="submit">OK</button>
                 </form>
