@@ -32,10 +32,12 @@ function Explore() {
                 <h4>{(typeof topic === "undefined") ? "Other users:" : "Other users related to this topic:"}</h4>
                 <div className={css.usersBox}>
                     {uList.map(usr =>
+                    <Link to={"/profile/" + usr.id}>
                         <div className={css.user}>
                             <img src={publicUrl(usr.photo)} />
                             <p>{usr.name}</p>
-                        </div>)}
+                        </div>
+                        </Link>)}
                 </div>
             </div>
         );
