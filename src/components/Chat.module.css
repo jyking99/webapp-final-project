@@ -48,3 +48,6 @@
     padding-bottom: 5em;
 }
 
+li a {
+    width: auto;
+}

@@ -6,7 +6,7 @@ import publicUrl from "utils/publicUrl.js";
 
 import css from './NewPost.module.css';
 
-function NewPost(props) {
+function NewPost() {
     let { chatId } = useParams();
     let { changeTag, currentUserId, getChat, getUser, publish } = useContext(StoreContext);
 

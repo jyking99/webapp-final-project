@@ -3,3 +3,16 @@
     border-width: 0.5px;
     border-color: rgb(224, 224, 224);;
 }
+
+h4 {
+    margin-bottom: 0.5em;
+}
+
+.usersBox {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.usersBox div {
+    margin-left: 0.5em;
+}

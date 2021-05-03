@@ -24,7 +24,7 @@ function Chat() {
 
     function handleSubmitComment(event) {
         if (message !== '') {
-            addChat(userId, message, topic);
+            addChat(userId, message, (topic === "All") ? "null" : topic);
             setMessage(''); //reset
         }
         event.preventDefault(); // prevent page refresh

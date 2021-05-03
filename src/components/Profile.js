@@ -56,7 +56,7 @@ function Profile() {
                     {renderTags()}
                 </div>
                 <div className={css.recent}>
-                    <b><p>Recent questions</p></b>
+                    <b><p>Recent posts</p></b>
                     {renderQuestions()}
                 </div>
             </div>

@@ -17,10 +17,11 @@ function StoreContextProvider(props) {
 
   function addChat(userId, text, topic) {
     const message = {
+      id: uniqueId(),
       from: store.currentUserId,
       to: userId,
       text,
-      topic,
+      topic: topic.toLowerCase(),
       datetime: new Date().toISOString()
     };
     setStore({
@@ -39,7 +40,7 @@ function StoreContextProvider(props) {
 
   function changeTag(chatId, tag) {
     let chat = getChat(chatId);
-    chat["topic"] = tag;
+    chat["topic"] = tag.toLowerCase();
     setStore({
       ...store,
       chats: store.chats.filter(c => !(c.id == chatId)).concat(chat)
@@ -56,7 +57,7 @@ function StoreContextProvider(props) {
       userId: chat.from,
       text: chat.text,
       datetime: chat.datetime,
-      topic: chat.topic,
+      topic: chat.topic.toLowerCase(),
       replies: []
     }
 

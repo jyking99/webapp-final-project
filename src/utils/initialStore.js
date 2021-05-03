@@ -8,7 +8,7 @@ export default {
             photo:"/assets/ur1.png",
             name: "Junyi Wang",
             bio:"My name is Jy, and I am a Computer Sience major at Boston College. My main area of comp sci is website development, and I am fluent with JS, SQL, Java, and HTML",
-            tags: ["Computer Science", "Math", "random"],
+            tags: ["computer science", "math", "random"],
         },
         {
             id:"yufin",
@@ -16,7 +16,7 @@ export default {
             photo:"/assets/ur2.png",
             name: "Yufin Yang",
             bio:"Hi, I am Yufin and I am a Math Comp Sci double major at Bosotn College. I am currently working on learning backend development of software so any discussions are welcome. I enjoy playing FPS when bored so if you are also a shooter hmu.",
-            tags: ["Computer Science", "Math", "Dancing", "FPS"],
+            tags: ["computer science", "math", "dancing", "fps"],
         },
         {
             id:"ryan",
@@ -24,7 +24,7 @@ export default {
             photo:"/assets/ur3.png",
             name:"Ryan Wang",
             bio:"My name is Ryan, and I am a CSGO Pro and Dota2 Pro. I like to compose music and write code in my freetime. My favorite genre of music is rap. ",
-            tags: ["Music", "Computer Science", "FPS"],
+            tags: ["music", "computer science", "fps"],
         },
         {
             id:"roger",
@@ -32,7 +32,7 @@ export default {
             photo:"/assets/ur4.png",
             name: "Roger Yang",
             bio:"Hi I am Roger, and I am a Psych major at Boston College. My area of expertise is social psychology",
-            tags: ["Console gaming", "Psychology", "Computer Science"],
+            tags: ["console gaming", "psychology", "computer science"],
         }
     ],
     chats:[
@@ -76,13 +76,21 @@ export default {
             topic:'history',
             datetime:'2020-02-09T22:46:40Z'
         },
+        {
+            id:"chat-6",
+            from:'ryan',
+            to:'junyi',
+            text:'What is the name of the biggest dinossaur ever existed?',
+            topic:'biology',
+            datetime:'2020-02-09T22:46:40Z'
+        }
     ],
     posts:[
         {
             userId: 'roger',
-            text: 'Post 1',
+            text: 'python: can not int variable does not have property len',
             datetime: '2020-05-22T11:45:27Z',
-            topic: 'python: can not int variable does not have property len',
+            topic: 'computer Science',
             replies: [
                 {
                     from: "ryan",
@@ -92,8 +100,8 @@ export default {
         }, 
         {
             userId: 'yufin',
-            text: 'Post 2',
-            topic: 'Cryptography: How to decrypt bad RSA encryption using a small exponent.',
+            text: 'Cryptography: How to decrypt bad RSA encryption using a small exponent.',
+            topic: 'computer science',
             datetime: '2021-04-22T11:45:27Z',
             replies: [
                 {from: "Roger",

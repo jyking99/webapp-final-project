@@ -13,6 +13,35 @@
     padding: 0.5em 0em 0em 0.5em;
 }
 
+li a {
+    width: 100%;
+    display: flex;
+}
+
+li p {
+    margin-top: -0.3em;
+    margin-left: 0.5em;
+}
+
+.nameTime {
+    display: flex;
+    margin-bottom: 0.3em;
+    justify-content: space-between;
+}
+
+.other {
+    width: 100%;
+    padding-right: 0.5em;
+}
+
+.time {
+    /* color: grey; */
+}
+
+.lastchat {
+    color: grey;
+}
+
 img{
     size:100%;
     max-width: 50px;
