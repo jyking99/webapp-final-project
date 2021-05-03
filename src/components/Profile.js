@@ -30,8 +30,10 @@ function Profile() {
                 {posts.filter(post => post.userId === user.id).map(post =>
                     <li className={css.questions}>
                         <Link>
-                            {post.text}<br/>
-                            <div className={css.topic}>Topic: {post.topic}</div>
+                            <div>
+                                {post.text}
+                                <div className={css.topic}>Topic: {post.topic}</div>
+                            </div>
                         </Link>
                     </li>
                 )}
@@ -60,7 +62,7 @@ function Profile() {
                     {renderQuestions()}
                 </div>
             </div>
-            <br/><br/><br/>
+            <br /><br /><br />
         </div>
     )
 }

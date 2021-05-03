@@ -1,11 +1,16 @@
 .post{
     border-top:solid;
     border-width: 0.5px;
-    border-color: rgb(224, 224, 224);;
+    border-color: rgb(224, 224, 224);
+}
+
+.post img {
+    padding-right: 0.5em;
 }
 
 h4 {
     margin-bottom: 0.5em;
+    margin-left: 0.3em;
 }
 
 .usersBox {
@@ -14,5 +19,9 @@ h4 {
 }
 
 .usersBox div {
-    margin-left: 0.5em;
+    margin-left: 1em;
+}
+
+.whole {
+    padding-bottom: 5em;
 }

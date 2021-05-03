@@ -50,7 +50,7 @@ function Explore() {
     }
 
     return (
-        <div>
+        <div className={css.whole}>
             <Header title={(typeof topic === "undefined") ? "Explore" : "Explore: " + topic} />
             {getUsersT()}
             {renderPosts()}

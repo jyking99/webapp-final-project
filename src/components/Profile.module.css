@@ -35,6 +35,7 @@ p {
 
 .content ul {
     margin: 0;
+    padding-left: 1em;
 }
 
 .attributes {
